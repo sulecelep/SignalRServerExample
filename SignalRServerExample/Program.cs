@@ -26,6 +26,7 @@ namespace SignalRServerExample
             app.UseCors();
             //https://localhost:7229/myhub 
             app.MapHub<MyHub>("/myhub");
+            app.MapHub<MessageHub>("/messagehub");
             app.MapControllers();
             app.Run();
         }
